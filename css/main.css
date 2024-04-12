@@ -13,7 +13,7 @@ p {
 /* Custom styles */
 
 body.dark-mode {
-    background-color: #343a40;
+    background-color: #0e0f11;
     color: #ffffff;
   }
   
@@ -22,14 +22,55 @@ body.dark-mode {
   }
   
   .dark-mode .custom-control-label::after {
-    background-color: #212529;
+    background-color: #0e0f11;
   }
   
   .dark-mode .custom-control-input:checked~.custom-control-label::before {
-    background-color: #212529;
+    background-color: #0e0f11;
   }
   
   .dark-mode .custom-control-input:checked~.custom-control-label::after {
     background-color: #ffffff;
   }
+
+
+ 
+    /* Main page content */
+.main-page {
+  text-align: center; /* Center align main content */
+  margin-top: 2rem; /* Add margin to the top */
+  width: 100%; /* Ensure full width */
+}
+
+.main-page h1{
+   font-size: 5em;
+}
+.main-page h2{
+  font-size: 3em;
+}
+.main-page p {
+  font-size: 1.5em;
+  padding-top: 1em;
+}
+.main-page li a {
+  font-size: 1.5em;
+}
+
+/*Footer */
+
+.footer-site {
+    text-align: center; /* Center align footer content */
+}
+
+/* Adjusting the alignment of social media icons */
+.container-footer {
+    display: flex;
+    justify-content: center; /* Center align horizontally */
+    padding-top: 2em;
+}
+
+.container-footer a{
+  margin: 0 2em;
+  font-size: 2em;
+}
   

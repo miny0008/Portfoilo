@@ -74,7 +74,7 @@
                     <div>
                         <a href="about_fr.html" class="language-switch" onclick="switchLanguage()">FR</a>
                     </div>
-                    >
+                    
 
                     <!-- Dark/Light Mode Toggle -->
                     <div class="custom-control custom-switch ml-2">
@@ -128,48 +128,11 @@
                     style="color: #001ee3;"></i></a>
             <a href="https://twitter.com"><i class="fab fa-twitter" style="color: #001ee3;"></i></a>
         </div>
+        <div>
+            <p>&copy; 2024 Beni Minyeri. Tous droits réservés.</p>
+        </div>
     </footer>
-
-
-    <!-- Language Switch -->
-
-<script>
-    function switchLanguage() {
-        // Check the current language
-        var currentLanguage = document.documentElement.lang;
-
-        // If the current language is English, switch to French, and vice versa
-        if (currentLanguage === "en") {
-            // Change the language to French
-            document.documentElement.lang = "fr";
-
-            // Update links to point to French versions of pages
-            document.querySelectorAll('a').forEach(function(link) {
-                if (link.href.endsWith(".html")) {
-                    link.href = link.href.replace(".html", "_fr.html");
-                }
-            });
-
-            // Update language switch text
-            document.querySelector('.language-switch').innerText = "EN";
-        } else {
-            // Change the language to English
-            document.documentElement.lang = "en";
-
-            // Update links to point to English versions of pages
-            document.querySelectorAll('a').forEach(function(link) {
-                if (link.href.endsWith("_fr.html")) {
-                    link.href = link.href.replace("_fr.html", ".html");
-                }
-            });
-
-            // Update language switch text
-            document.querySelector('.language-switch').innerText = "FR";
-        }
-    }
-</script>
-
-
+    </div>
     <script>
         // Toggle dark mode
         document.getElementById('darkModeSwitch').addEventListener('change', function () {
@@ -188,7 +151,6 @@
             document.body.classList.remove('dark-mode');
         }
     </script>
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
     </script>

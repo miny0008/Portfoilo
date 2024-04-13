@@ -1,10 +1,75 @@
-h1, h2, h3 {
-    font-family: "Grenze", serif;
-}
-p {
-    font-family: "Poppins", sans-serif;
+
+
+
+
+
+h1,
+h2,
+h3 {
+  font-family: "Grenze", serif;
 }
 
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+/* index.html page and background design */
+
+.body-page {
+  background-image: url("../images/logoportfolio.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  max-width: 8000px;
+  ;
+}
+
+.body-page img:hover {
+  transform: scale(1.1);
+  /* Increase the size on hover */
+}
+
+
+
+
+/*project page*/
+
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.card {
+  animation: slideIn 0.5s ease forwards;
+}
+
+.card-body {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .card-body {
+  opacity: 1;
+}
+
+.card {
+  justify-content: center;
+}
+
+.main-projects h1 {
+  text-align: center;
+  padding-bottom: 5em;
+}
 
 
 
@@ -13,64 +78,200 @@ p {
 /* Custom styles */
 
 body.dark-mode {
-    background-color: #0e0f11;
-    color: #ffffff;
-  }
-  
-  .dark-mode .custom-control-label::before {
-    background-color: #ffffff;
-  }
-  
-  .dark-mode .custom-control-label::after {
-    background-color: #0e0f11;
-  }
-  
-  .dark-mode .custom-control-input:checked~.custom-control-label::before {
-    background-color: #0e0f11;
-  }
-  
-  .dark-mode .custom-control-input:checked~.custom-control-label::after {
-    background-color: #ffffff;
-  }
+  background-color: #01231df7;
+  color: #dcd8d8;
+}
+
+.dark-mode .custom-control-label::before {
+  background-color: #01231df7;
+}
+
+.dark-mode .custom-control-label::after {
+  background-color: #01231df7;
+}
+
+.dark-mode .custom-control-input:checked~.custom-control-label::before {
+  background-color: #01231df7;
+}
+
+.dark-mode .custom-control-input:checked~.custom-control-label::after {
+  background-color: #01231df7;
+}
 
 
- 
-    /* Main page content */
+
+/* Main page content */
 .main-page {
-  text-align: center; /* Center align main content */
-  margin-top: 2rem; /* Add margin to the top */
-  width: 100%; /* Ensure full width */
+  text-align: center;
+  /* Center align main content */
+  margin-top: 2rem;
+  /* Add margin to the top */
+  width: 100%;
+  /* Ensure full width */
 }
 
-.main-page h1{
-   font-size: 5em;
+.main-page h1 {
+  font-size: 5em;
 }
-.main-page h2{
+
+.main-page h2 {
   font-size: 3em;
 }
+
 .main-page p {
   font-size: 1.5em;
   padding-top: 1em;
 }
+
 .main-page li a {
   font-size: 1.5em;
 }
 
+.container li a:hover {
+  text-decoration: underline;
+} 
+
+
+
 /*Footer */
 
 .footer-site {
-    text-align: center; /* Center align footer content */
+  text-align: center;
+  /* Center align footer content */
 }
 
 /* Adjusting the alignment of social media icons */
 .container-footer {
-    display: flex;
-    justify-content: center; /* Center align horizontally */
-    padding-top: 2em;
+  display: flex;
+  justify-content: center;
+  /* Center align horizontally */
+  padding-top: 2em;
 }
 
-.container-footer a{
-  margin: 0 2em;
+.container-footer a {
+  margin: 0 2.5em;
   font-size: 2em;
 }
+
+.container-mt-4 ul a {
+  margin: 0 2em;
+}
+
+/* logo-page css design */
+
+.logo-header {
+  text-align: center;
+  padding: 5em;
+
+}
+
+
+
+/* CSS animations for card entrance */
+@keyframes animateRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes animateBottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes animateLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Apply animations to cards */
+.animate-right {
+  animation: animateRight 1s ease forwards;
+}
+
+.animate-bottom {
+  animation: animateBottom 1s ease forwards;
+}
+
+.animate-left {
+  animation: animateLeft 1s ease forwards;
+}
+
+/* Footer Icon */
+
+/* Add CSS for icon links */
+.icon-link {
+  font-size: 24px;
+  transition: transform 0.3s ease;
+  /* Smooth transition */
+}
+
+/* Add animation on hover */
+.icon-link:hover {
+  transform: scale(0.9);
+  /* Shrink the icon on hover */
+}
+
+/* Add animation on click */
+.icon-link:active {
+  transform: scale(1);
+  /* Restore normal size when clicked */
+}
+
+
+.main-page {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/logoportfolio.svg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-page:hover {
+    animation-name: jump;
+    animation-duration: 2s;
+}
+
+@keyframes jump {
+  10%, 25% { 
+    transform: scale(1.3, 0.7); 
+  }
   
+  50% { 
+    transform: scale(0.5, 2) translate(0, -100px); 
+  }  
+  
+  60% { 
+    transform: scale(1, 1) translate(0, 0);   
+  } 
+  
+  75% { 
+    transform: scale(1.3, 0.7) translate(0, 0); 
+  }
+  
+  85% { 
+    transform: scale(1, 1) translate(0, 0);   
+  }
+}

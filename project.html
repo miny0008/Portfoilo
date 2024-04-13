@@ -74,13 +74,15 @@
         </div>
     </nav>
 
-    <main>
+    <main class="main-projects">
         <header>
             <h1>Projects</h1>
         </header>
 
-        <div class="container">
-            <div class="row">
+        <div class="container-projects">
+            <div class="row justify-content-center">
+                <!-- Added justify-content-center -->
+
                 <div class="col-md-4">
                     <div class="card">
                         <a href="https://www.youtube.com/watch?v=IdeS5fMYmXI">
@@ -89,104 +91,74 @@
                         </a>
                         <div class="card-body">
                             <p class="card-text"><b>Creator:</b> Beni Miyeri & Regina Trevino</p>
-                            <p>My partner and I created this video to show our love for sneakers and fashion as a whole.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <a href="https://beniminyeriphotography.myportfolio.com/work">
-                            <img src="images/Screenshot 2024-03-28 at 11.30.13 PM.png" class="card-img-top"
-                                alt="Image 2">
-                        </a>
-                        <div class="card-body">
-                            <p class="card-text"><b>Creator:</b>Beni Minyeri</p>
-                            <p>After my first semester in Interactiv Media Design, every student had to create a photo
-                                gallery to showcase their photography skills</p>
+                            <p>My partner and I created this video to show our love for sneakers and fashion as a
+                                whole.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
                         <a href="logo.html">
-                            <img src="images/Screenshot 2024-03-29 at 11.42.29 PM.png" class="card-img-top" alt="Image 3">
+                            <img src="images/Screenshot 2024-03-29 at 11.42.29 PM.png" class="card-img-top"
+                                alt="Image 3">
                         </a>
                         <div class="card-body">
-                            <p class="card-text">Click on the logo to check it out.</p>
+                            <p class="card-text"><b>Creator:</b> Beni Minyeri</p>
+                            <p> A retail store sore located in <b>Montreal.</b></p>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-4">
                     <div class="card">
-                        <a href="https://example.com">
-                            <img src="image3.jpg" class="card-img-top" alt="Image 3">
+                        <a href="https://beniminyeriphotography.myportfolio.com/work">
+                            <img src="images/001_Minyeri_B-5.jpg" class="card-img-top" alt="Image 2">
                         </a>
                         <div class="card-body">
-                            <p class="card-text">Description of Image 4</p>
+                            <p class="card-text">After my first semester in Interactiv Media Design, every student had
+                                to create a gallery to showcase their photography skills.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="card">
-                        <a href="https://example.com">
-                            <img src="image3.jpg" class="card-img-top" alt="Image 3">
-                        </a>
-                        <div class="card-body">
-                            <p class="card-text">Description of Image 5</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card">
-
-                        <img src="" class="card-img-top" alt="Image 3">
-                    </a>
-                    <div class="card-body">
-                        <p class="card-text">Description of Image 6</p>
-                    </div>
-                </div>
             </div>
         </div>
-        <main>
 
-        </main>
-        <footer class="footer-site">
-            <div class="container-footer">
-                <a href="#"><i class="fab fa-instagram" style="color: #e32400;"></i></a>
-                <a href="#"><i class="fab fa-linkedin" style="color: #e32400;"></i></a>
-                <a href="#"><i class="fab fa-twitter" style="color: #e32400;"></i></a>
-            </div>
-        </footer>
-        <script>
-            // Toggle dark mode
-            document.getElementById('darkModeSwitch').addEventListener('change', function () {
-                if (this.checked) {
-                    enableDarkMode();
-                } else {
-                    disableDarkMode();
-                }
-            });
 
-            function enableDarkMode() {
-                document.body.classList.add('dark-mode');
+
+
+    </main>
+    <footer class="footer-site">
+        <div class="container-footer">
+            <a href="https://www.instagram.com/officialbenihana/"><i class="fab fa-instagram" style="color: #001ee3;"></i></a>
+            <a href="https://www.linkedin.com/in/beni-minyeri-3941882b0/"><i class="fab fa-linkedin" style="color: #001ee3;"></i></a>
+            <a href="https://twitter.com"><i class="fab fa-twitter" style="color: #001ee3;"></i></a>
+        </div>
+    </footer>
+    <script>
+        // Toggle dark mode
+        document.getElementById('darkModeSwitch').addEventListener('change', function () {
+            if (this.checked) {
+                enableDarkMode();
+            } else {
+                disableDarkMode();
             }
+        });
 
-            function disableDarkMode() {
-                document.body.classList.remove('dark-mode');
-            }
-        </script>
+        function enableDarkMode() {
+            document.body.classList.add('dark-mode');
+        }
 
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
-        </script>
+        function disableDarkMode() {
+            document.body.classList.remove('dark-mode');
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

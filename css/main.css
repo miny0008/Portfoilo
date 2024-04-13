@@ -17,13 +17,15 @@ p {
 
 /* index.html page and background design */
 
-.body-page {
+.main-page {
   background-image: url("../images/logoportfolio.svg");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
+  min-width: 100px;
   max-width: 8000px;
-  ;
+
 }
 
 .body-page img:hover {
@@ -220,58 +222,146 @@ body.dark-mode {
 /* Footer Icon */
 
 /* Add CSS for icon links */
-.icon-link {
+.icon-link a {
   font-size: 24px;
   transition: transform 0.3s ease;
   /* Smooth transition */
 }
 
 /* Add animation on hover */
-.icon-link:hover {
+.icon-link a:hover {
   transform: scale(0.9);
   /* Shrink the icon on hover */
 }
 
 /* Add animation on click */
-.icon-link:active {
+.icon-link a:active {
   transform: scale(1);
   /* Restore normal size when clicked */
 }
 
+/* About me*/
 
-.main-page {
-  width: 100%;
-  height: 100vh;
-  background-image: url("../images/logoportfolio.svg");
-  background-size: cover;
-  background-position: center;
+.heading{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.heading h1{
+  margin-bottom: 25px;
   position: relative;
+}
+.heading h1::after {
+  content:"";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  display: block;
+  margin: 0 auto;
+  background-color: black;
+}
+
+.heading p{
+  margin-bottom: 35px;
+}
+
+.headiing-about{
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+.aboutme{
+  display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+
+}
+
+.aboutme-image{
+  flex: 1;
+  margin-right: 40px;
   overflow: hidden;
 }
 
-.main-page:hover {
-    animation-name: jump;
-    animation-duration: 2s;
+.aboutme-image img{
+  max-width: 100%;
+  height: auto;
+  display: auto;
+  transition: 0.5s ease;
 }
 
-@keyframes jump {
-  10%, 25% { 
-    transform: scale(1.3, 0.7); 
-  }
-  
-  50% { 
-    transform: scale(0.5, 2) translate(0, -100px); 
-  }  
-  
-  60% { 
-    transform: scale(1, 1) translate(0, 0);   
-  } 
-  
-  75% { 
-    transform: scale(1.3, 0.7) translate(0, 0); 
-  }
-  
-  85% { 
-    transform: scale(1, 1) translate(0, 0);   
-  }
+.aboutme-image img{
+  transform:rotate(80%)
 }
+
+.aboutme-content{
+  flex: 1;
+}
+
+.aboutme-content h2 {
+  margin-bottom: 15px;
+}
+
+.aboutme-content p{
+  line-height: 1.5;
+}
+
+.aboutme-content .read-resume{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #001ee3;
+  color: #dcd8d8;
+  text-decoration: none;
+  border-radius: 25px;
+  margin-top: 15px;
+  transition: 0.3s ease;
+
+}
+
+.aboutme-content .read-resume:hover{
+  background-color: rgb(0, 132, 255);
+}
+
+/**** Mediua change  ****/
+/*About me page*/
+
+@media screen and (max-width: 768px) {
+  .heading{
+    padding: 0px 20px;
+  }
+  .heading p{
+    margin-bottom: 0px;
+
+  }
+
+  .headiing-about {
+    padding: 0px;
+  }
+  .aboutme{
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .aboutme-image {
+    margin-right: 0px;
+    margin-bottom:20px;
+  }
+  .aboutme-content p{
+    padding: 0px;
+
+  }
+
+
+  
+}
+
+
+
+
+
+
